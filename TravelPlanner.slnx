@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/TravelPlanner.Api/TravelPlanner.Api.csproj" />
+    <Project Path="src/TravelPlanner.Application/TravelPlanner.Application.csproj" />
+    <Project Path="src/TravelPlanner.Domain/TravelPlanner.Domain.csproj" />
+    <Project Path="src/TravelPlanner.Infrastructure/TravelPlanner.Infrastructure.csproj" />
+  </Folder>
+</Solution>
