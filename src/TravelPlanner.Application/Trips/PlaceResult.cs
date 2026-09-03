@@ -1,0 +1,1 @@
+public record PlaceResult(string Name, string? Address, string? Category);
