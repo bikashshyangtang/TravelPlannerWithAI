@@ -1,0 +1,113 @@
+:root{
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+
+    --color-text: #1f2328;     /* primary text — near-black, not pure black */
+    --color-muted: #656d76;    /* secondary text, hints */
+    --color-border: #d0d7de;   /* hairlines */
+    --color-accent: #0969da;   /* buttons, links, focus */
+
+    --text-sm: 0.875rem;    /*14px - captions, metadata */
+    --text-base: 1rem;      /*16px - body */
+    --text-lg: 1.125rem;    /*18px - subheadings */
+    --text-xl: 1.5rem;      /*24px - section headings */
+    --text-2xl: 2rem;       /*32px - page title */
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: var(--text-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    padding: var(--space-lg);
+}
+
+h1{
+    font-size: var(--text-2xl);
+    line-height: 1.2;
+    margin-bottom: var(--space-lg);
+}
+
+.trip-form{
+    max-width: 30rem;
+}
+
+.field{
+    margin-bottom: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.field label{
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+    font-weight: 500;
+}
+
+.field-row{
+    display: flex;
+    gap: 1rem;
+}
+
+.field-row .field{
+    flex: 1;
+}
+
+
+.interests{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 0.75rem;
+    align-items: center;
+    border: 1px none var(--color-border);
+    border-radius: 6px;
+    padding: 0;
+}
+
+.interest{
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.interests legend{
+    font-size: var(--text-sm);
+    color: var(--color-muted);
+    font-weight: 500;
+    padding:0;
+    margin-bottom: 0.5rem;
+}
+
+input:not([type="checkbox"]), select{
+    width:100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.button{
+    margin-top: 1.25rem;
+    background: var(--color-accent);
+    transition: background 150ms ease;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0.5rem 1.25rem;
+    font-family: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: #0860ca;
+}
+
