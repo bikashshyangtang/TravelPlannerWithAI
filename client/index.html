@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Welcome to the Travel Planner</h1>
+    <form class="trip-form">
+      <div class="field">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required />
+      </div>
+      <div class="field">
+        <label for="budget">Budget:</label>
+        <input type="number" id="budget" name="budget" required />
+      </div>
+      <div class="field">
+        <label for="budgetLevel">Budget Level:</label>
+        <select id="budgetLevel" name="budgetLevel" required>
+          <option value="Budget">Budget</option>
+          <option value="Moderate">Moderate</option>
+          <option value="Luxury">Luxury</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" name="startDate" required />
+        </div>
+        <div class="field">
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" name="endDate" required />
+        </div>
+      </div>
+      <fieldset class="interests">
+        <legend>Interests</legend>
+        <div class="interest">
+          <input type="checkbox" id="food" name="interests" value="Food" />
+          <label for="food">Food</label>
+        </div>
+        <div class="interest">
+          <input type="checkbox" id="culture" name="interests" value="Culture" />
+          <label for="culture">Culture</label>
+        </div>
+        <div class="interest">
+          <input type="checkbox" id="adventure" name="interests" value="Adventure"/>
+          <label for="adventure">Adventure</label>
+        </div>
+        <div class="interest">
+          <input type="checkbox" id="history" name="interests" value="History" />
+          <label for="history">History</label>
+        </div>
+        <div class="interest">
+          <input type="checkbox" id="art" name="interests" value="Art" />
+          <label for="art">Art</label>
+        </div>
+      </fieldset>
+      <button class="button" type="submit">Plan Trip</button>
+    </form>
+  </body>
+</html>

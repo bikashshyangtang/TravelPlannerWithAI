@@ -27,9 +27,20 @@ builder.Services.ConfigureHttpJsonOptions(options =>
     options.SerializerOptions.Converters.Add(new JsonStringEnumConverter());
 });
 
+builder.Services.AddCors(optioms =>
+{
+   optioms.AddPolicy("Frontend", policy =>
+   {
+       policy.AllowAnyOrigin()
+             .AllowAnyHeader()
+             .AllowAnyMethod();
+   }); 
+});
+
 var app = builder.Build();
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+app.UseCors("Frontend");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())    // ← new block
