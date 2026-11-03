@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>Welcome to the Travel Planner</h1>
-    <form class="trip-form">
+    <form class="trip-form" id="tripForm">
       <div class="field">
         <label for="destination">Destination:</label>
         <input type="text" id="destination" name="destination" required />
@@ -60,5 +60,7 @@
       </fieldset>
       <button class="button" type="submit">Plan Trip</button>
     </form>
+    <div id ="results"></div>
+    <script src="/client/app.js"></script>
   </body>
 </html>
