@@ -29,7 +29,7 @@ form.addEventListener('submit', async (event) => {
             })
         });
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
         const results = document.getElementById('results');
         results.innerHTML = ``;
         data.days.forEach(day => {
@@ -54,7 +54,7 @@ form.addEventListener('submit', async (event) => {
     }
     catch(error){
         console.error('Error:', error);
-        documetent.getElementById('results').innerHTML = `<p class="error">An error occurred while planning the trip. Please try again later.</p>`;
+        document.getElementById('results').innerHTML = `<p class="error">An error occurred while planning the trip. Please try again later.</p>`;
     }
     finally{
         button.disabled = false;
